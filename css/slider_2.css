@@ -1,0 +1,84 @@
+.goods_swiper-wrapper {
+  position: relative;
+  margin-top: 50px;
+}
+.goods_swiper-wrapper .goods_swiper {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1442px;
+}
+.goods_swiper-wrapper .goods_swiper .swiper-slide {
+  display: block;
+  padding-top: 14px;
+  font-size: 18px;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  background-color: white;
+  min-height: 351px;
+}
+.goods_swiper-wrapper .goods_swiper .swiper-slide .card-pump {
+  margin: 0 auto;
+  width: 231px;
+  height: 225px;
+  background: url(../img/pump.jpg) no-repeat;
+}
+.goods_swiper-wrapper .goods_swiper .swiper-slide .text-pump {
+  padding: 10px 20px 0;
+  font-size: 17px;
+  font-family: "Gilroy Medium", sans-serif;
+  color: #3d3d3d;
+  line-height: 1.353;
+  text-align: center;
+}
+.goods_swiper-wrapper .goods_swiper .swiper-slide .card-spotlight {
+  margin: 0 auto;
+  width: 231px;
+  height: 225px;
+  background: url(../img/spotlight.png) no-repeat;
+  background-position: center;
+}
+.goods_swiper-wrapper .goods_swiper .swiper-slide .text-spotlight {
+  padding: 10px 20px 0;
+  font-size: 17px;
+  font-family: "Gilroy Medium", sans-serif;
+  color: #3d3d3d;
+  line-height: 1.353;
+  text-align: center;
+}
+.goods_swiper-wrapper .goods-slider-arrows {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  top: 150px;
+  z-index: 2;
+}
+.goods_swiper-wrapper .goods-slider-arrows .arrw {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #afafaf;
+  background: url(../img/left-arrow.png) no-repeat;
+  background-position: center;
+  background-color: #27c1de;
+}
+.goods_swiper-wrapper .goods-slider-arrows .arrw:hover {
+  background-color: #3ddafa;
+}
+.goods_swiper-wrapper .goods-slider-arrows .arrw.arrwLeft {
+  left: -25px;
+}
+.goods_swiper-wrapper .goods-slider-arrows .arrw.arrwRight {
+  left: 25px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.goods_swiper-wrapper .goods-slider-arrows .arrw:disabled {
+  background-color: white;
+}

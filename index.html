@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider_1.css">
+    <link rel="stylesheet" href="css/slider_2.css">
+</head>
+<body>
+    <section class="firstPage" id="main">
+        <div class="container">
+            <header class="header">
+                <nav>
+                    <ul class="header__nav">
+                        <li class="nav-active"><a href="#main">Главная</a></li>
+                        <li><a href="#goods">Товары</a></li>
+                        <li><a href="#infoBlock">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__logo"></div>
+                <div class="header__numbers">
+                    <div>+7 727 368 83 56</div>
+                    <div>+7 771 964 36 50</div>
+                </div>
+            </header>
+            <div class="info">
+                <h1 class="info__title">Строительство бассейнов</h1>        
+                <div class="info__text"><span>Полный спект работ:</span> от проектирования и сдачи "под ключ" до обслуживания или реконструкции вашего бассейна, а также большой выбор товаров</div>
+                <button class="button">Оставить заявку</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="ourWork">
+        <h1 class="ourWork__title">НАШИ РАБОТЫ</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/picture2.png" alt="pool"></div>
+                <div class="swiper-slide"><img src="img/picture3.jpg" alt="pool"></div>
+                <div class="swiper-slide"><img src="img/picture1.jpg" alt="pool"></div>  
+            </div>
+            <div class="ourWork-slider-arrows">
+                <div class="ourWork-slider__arrowLeft ourWork-slider__arrow"></div>
+                <div class="ourWork-slider__arrowRight ourWork-slider__arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price">
+        <h1 class="price__title">сколько будет стоить бассейн?</h1>
+        <div class="price__text">Ответьте на несколько вопросов и наши специалисты отправят вам смету в течении <span>1 рабочего дня</span></div>
+        <div class="price-blocks">
+
+            <div class="form-wrapper">
+                <form action="#" class="price__form">
+
+                    <label for="otdelka" class="otdelka">Отделка чаши:</label>
+                    <select id="otdelka">
+                        <option>Полипропилен</option>
+                        <option>Другое</option>
+                    </select>
+                    <br>
+
+                    <label for="nagrev" class="nagrev">Нагрев воды:</label>
+                    <select id="nagrev">
+                        <option>Нет</option>
+                        <option>Да</option>
+                    </select>
+                    <br>
+
+                    <label class="poolSize">Размер бассейна:</label>
+                    <input type="range" class="price__form-range">
+                    <output name="displ" class="displaySize">7х3<sup> м.</sup></output>
+                    <br>
+
+                    <button class="button" >Оставить заявку</button>
+                    <div class="form-shadow"></div>
+                </form>
+            </div>
+            <div class="wrapper-poolPic">
+                <div class="poolPic"></div>
+            </div>
+        </div>
+    </section>
+    <div class="containerMax">
+        <section class="goods" id="goods">        
+            <h1 class="goods__title">Товары для бассейна</h1>
+            <div class="goods-filter">
+                <ul class="list">
+                    <li class="activ list__item" data-id="all">все</li>
+                    <li class="list__item" data-id="pump">насосы</li>
+                    <li class="list__item" data-id="spotlight">нагреватели</li>
+                </ul>
+            </div>
+            <div class="goods_swiper-wrapper"> 
+                <div class="goods_swiper swiper">                    
+                        <div class="swiper-wrapper">
+                            <div class="card swiper-slide pump">
+                                <div class="card-pump"></div>
+                                <div class="text-pump">Фильтровальная установка Bestway</div>
+                            </div>
+
+                            <div class="card swiper-slide spotlight">
+                                <div class="card-spotlight"></div>
+                                <div class="text-spotlight">Прожектор под плитку с оправой из ABS-пластика</div>
+                            </div>
+
+                            <div class="card swiper-slide pump">
+                                <div class="card-pump"></div>
+                                <div class="text-pump">Фильтровальная установка Bestway</div>
+                            </div>
+
+                            <div class="card swiper-slide spotlight">
+                                <div class="card-spotlight"></div>
+                                <div class="text-spotlight">Прожектор под плитку с оправой из ABS-пластика</div>
+                            </div>
+
+                            <div class="card swiper-slide pump">
+                                <div class="card-pump"></div>
+                                <div class="text-pump">Фильтровальная установка Bestway</div>
+                            </div>
+
+                            <div class="card swiper-slide spotlight">
+                                <div class="card-spotlight"></div>
+                                <div class="text-spotlight">Прожектор под плитку с оправой из ABS-пластика</div>
+                            </div>
+
+                            <div class="card swiper-slide pump">
+                                <div class="card-pump"></div>
+                                <div class="text-pump">Фильтровальная установка Bestway</div>
+                            </div>
+
+                            <div class="card swiper-slide spotlight">
+                                <div class="card-spotlight"></div>
+                                <div class="text-spotlight">Прожектор под плитку с оправой из ABS-пластика</div>
+                            </div>
+                    
+                    </div>                
+                </div>
+                <div class="goods-slider-arrows">
+                    <button class="arrw arrwLeft"></button>
+                    <button class="arrw arrwRight"></button>
+                </div>
+            </div> 
+            <button class="goods__button">Смотреть все</button>        
+        </section>
+    </div>
+
+    <section class="background">
+        <div class="container">
+
+            <div class="getting">
+                <h1 class="getting__title">что вы получаете?</h1>
+                <div class="getting-blocks">
+                    <div class="getting-block">
+                        <div class="block-icon__IP"></div>
+                        <div class="block-text">Индивидуальное предложение</div>
+                    </div>
+                    <div class="getting-block">
+                        <div class="block-icon__KomP"></div>
+                        <div class="block-text">Комплексная поддержка</div>
+                    </div>
+                    <div class="getting-block">
+                        <div class="block-icon__kacM"></div>
+                        <div class="block-text">Качественные материалы</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="questions">
+                <h1 class="questions__title">остались вопросы?</h1>
+                <div class="questions__text">Оставьте заявку и наши специалисты свяжутся  с вами в ближайшее время</div>
+                <form class="questions-form">
+                    <input type="text" class="questions-form__name" placeholder="Имя">
+                    <input type="text" class="questions-form__number" placeholder="Телефон"> 
+                    <button class="button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="wrapper-infoBlock">
+                <div class="footer-infoBlock" id="infoBlock">
+                    <h3 class="footer-infoBlock__title">КОНТАКТЫ</h3>
+                    <div class="footer-infoBlock__address">Казахстан, Алматы, Байзакова, 263, 1 этаж, 5 офис</div>
+                    <div class="footer-infoBlock__numbers">+7 727 368 83 56, +7 771 964 36 50</div>
+                    <div class="footer-infoBlock__email"><a href="#">imfo@pool.kz</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+ 
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="scripts/slider_1.js"></script>
+<script src="scripts/slider_2.js"></script>
+<script src="scripts/filter.js"></script>
+</body>
+</html>

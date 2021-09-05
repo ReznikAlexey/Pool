@@ -1,0 +1,652 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+@font-face {
+    font-family:'Gilroy SemiBold';
+    src: url(../fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+    font-family:'Gilroy Bold';
+    src: url(../fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family:'Gilroy Medium';
+    src: url(../fonts/Gilroy-Medium.ttf);
+}
+
+.container {
+    max-width: 1180px;
+    padding: 0 18px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+ .containerMax {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+} 
+
+.firstPage {
+    background: url(../img/1экран.jpg) no-repeat;
+    background-position: top center;
+    height: 950px;
+}
+
+.header {
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    .header__nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 390px;
+        li {
+            position: relative;
+            list-style-type: none;
+            margin: 0 20px;
+            padding: 12px 0;
+            a {
+                font-size: 18px;
+                font-family: "Gilroy SemiBold", sans-serif;
+                 color: rgb(22, 57, 80);
+                 font-weight: bold;
+                line-height: 2.778;
+                text-decoration: none;
+            }
+            &.nav-active {
+                &::after {
+                    content: "";
+                    position:absolute;
+                    width: 40px;
+                    height: 10px;
+                    background: url(../img/подчеркивание.png);
+                    left: 20%;
+                    bottom: 15px;
+                }
+            }
+        }
+    }
+    .header__logo {
+        background: url(../img/Logo.png) no-repeat;
+        width: 169px;
+        height: 93px;  
+        @media screen and (max-width: 992px) {
+            display: none;
+        }  
+    }
+    .header__numbers {
+        padding: 12px 0;
+        display: flex;
+        width: 390px;
+        font-size: 20px;
+        font-family: "Gilroy SemiBold", sans-serif;
+        color: rgb(22, 57, 80);
+        font-weight: bold;
+        line-height: 2.5;
+        div {
+            margin: 0 25px;
+        }
+    }
+}
+
+.info {
+    margin: 60px auto 0;
+    text-align: center;
+    width: 700px;
+    color: rgb(22, 57, 80);
+    .info__title {
+        font-size: 33px;
+        font-family: "Gilroy Bold", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.515;       
+    }
+    .info__text {
+        margin: 20px 0 25px;
+        font-size: 18px;
+        font-family: "Gilroy Medium", sans-serif;
+        span {
+            font-weight: bold;
+        }
+    }    
+}
+
+.ourWork {
+    margin: 0 auto;
+    .ourWork__title {
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 35px;
+        font-size: 35px;
+        font-family: "Gilroy Bold", sans-serif;
+        color: rgb(22, 57, 80);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.429;
+        text-align: center;
+        &::after {
+            content: "";
+            position:absolute;
+            width: 40px;
+            height: 10px;
+            background: url(../img/подчеркивание.png);
+            left: 48%;
+            bottom: 0;
+        }
+    }    
+}
+
+.price {   
+    margin-top: 70px;
+    background: url(../img/Фон.png) no-repeat;
+    background-position: top center;
+    height: 800px;
+    overflow: hidden;
+    .price__title {
+        position: relative;
+        padding-top: 125px;
+        padding-bottom: 20px;
+        font-size: 35px;
+        font-family:  "Gilroy Bold", sans-serif;
+        color: rgb(22, 57, 80);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.429;
+        text-align: center;
+        &::after {
+            content: "";
+            position:absolute;
+            width: 40px;
+            height: 10px;
+            background: url(../img/подчеркивание.png);
+            left: 49%;
+            bottom: 0;
+        }
+    }
+    .price__text {
+        margin: 30px auto 0;
+        font-size: 20px;
+        font-family:'Gilroy Medium', sans-serif;
+        color: rgb(22, 57, 80);
+        line-height: 1.25;
+        text-align: center;
+        width: 709px;
+        span {
+            font-family:  "Gilroy Bold", sans-serif;
+            color: #00497c;
+        }
+    }
+    .price-blocks {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 421px;
+        z-index: 1;
+        .form-wrapper {
+            position: relative;
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;  
+            .price__form {
+                display: grid;            
+                grid-template-columns: 145px 270px;
+                grid-template-rows: 45px 65px 80px 70px;
+                align-items: baseline;
+                padding: 0 25px;
+                margin-left: auto;
+                width: 600px;
+                height: 360px;
+                background-color: #fff;
+                position: relative;
+                border-radius: 15px;
+                  &::before {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 20px;
+                    background-color: #fff;
+                    left: -7px;
+                    border-left: 20px solid inherit;  
+                    border-radius: 100% 0 0 100%;                                      
+                 } 
+                 &::after {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 20px;
+                    background-color: #fff;
+                    right: -7px;
+                    border-right: 20px solid inherit;  
+                    border-radius: 0 100% 100% 0;                                      
+                 }
+                label {
+                    font-size: 18px;
+                    font-family:  "Gilroy Bold", sans-serif;
+                    color: rgb(22, 57, 80);
+                    font-weight: bold;
+                    line-height: 1.389;
+                }
+                .otdelka {
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+                #otdelka {
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+                .nagrev {
+                    grid-column: 1;
+                    grid-row: 3;
+                }
+                #nagrev {
+                    grid-column: 2;
+                    grid-row: 3; 
+                }
+                select {
+                    position: relative;
+                    margin-bottom: 24px;
+                    padding-left: 20px;
+                    width: 310px;
+                    height: 39px;
+                    border:1px solid rgb(209, 209, 209);
+                    border-radius: 6px;
+                    background-color: rgba(129, 118, 118, 0);
+                    box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+                    font-size: 18px;  
+                    font-family:'Gilroy Medium', sans-serif;
+                    color: rgb(22, 57, 80);
+                    line-height: 1.389;  
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -ms-appearance: none;
+                    appearance: none;
+                    background: url(../img/down-arrow.png) no-repeat;
+                    background-position: 93% center;                              
+                }
+                .price__form-range {
+                    width: 250px;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    cursor: pointer;
+                    &:focus {
+                        outline: none;
+                    }
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                    }
+                    &::-moz-range-thumb {
+                        border: none;
+                    }
+                    &::-webkit-slider-runnable-track {
+                        background-color: rgb(255, 255, 255);
+                        box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.11);                            
+                        width: 250px;
+                        height: 6px;                         
+                        border-radius: 10px;                        
+                    }
+                    &::-webkit-slider-thumb {
+                        position: relative;
+                        top: -70%;
+                        width: 20px;
+                        height: 20px;
+                        background-image: linear-gradient( 90deg, rgb(223,223,223) 0%, rgb(250,250,250) 100%);
+                        border-radius: 50%;
+                        box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.25);
+                        border: 2px solid rgb(244, 174, 102);                        
+                    }
+                }
+                .poolSize {
+                    grid-column: 1;
+                    grid-row: 4;
+                }
+                .price__form-range {
+                    grid-column: 2;
+                    grid-row: 4;
+                }
+                .displaySize {
+                    grid-column: 3;
+                    grid-row: 4;
+                    font-family: "Gilroy SemiBold", sans-serif;
+                    font-size: 20px;
+                    color: rgb(22, 57, 80);
+                    font-weight: bold;
+                    line-height: 1.25;                      
+                }
+                .button {
+                    grid-column: 2;
+                    grid-row: 5;
+                }
+                .form-shadow {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%; 
+                    z-index: -1;         
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        bottom: 14px;
+                        left: 20px;
+                        height: 20px;
+                        width: 50%;
+                        max-width:300px;
+                        background: white;
+                        box-shadow: 0 15px 18px  rgba(0, 0, 0, 0.5);
+                        transform: rotate(-5deg);
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+        .wrapper-poolPic {
+            flex-basis: 50%;
+            position: relative;
+            .poolPic {
+                position: absolute;
+                left: -50px;
+                background-image: url(../img/бассейн.png);
+                width: 886px;
+                height: 421px;
+            }
+        }        
+    }
+}
+
+
+.button {
+    width: 204px;
+    height: 49px;   
+    font-size: 20px;
+    font-family: "Gilroy Medium", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 2.25;      
+    background: linear-gradient( to bottom,  rgb(249,225,155), rgb(237,97,20)); 
+    border: none;    
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {            
+        background: linear-gradient( to bottom,  rgb(38,192,223), rgb(10,105,150)); 
+    }
+}
+
+.goods {
+    margin: 80px auto 0;
+    text-align: center;
+    .goods__title {
+        position: relative;
+        padding-bottom: 20px;
+        font-size: 35px;
+        font-family:  "Gilroy Bold", sans-serif;
+        color: rgb(22, 57, 80);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.429;
+        text-align: center;
+        &::after {
+            content: "";
+            position:absolute;
+            width: 40px;
+            height: 10px;
+            background: url(../img/подчеркивание.png);
+            left: 48%;
+            bottom: 0;
+        }          
+    }
+    .goods-filter {
+        margin-top: 30px;
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 0 20px;
+                font-size: 20px;
+                font-family: "Gilroy Medium", sans-serif;
+                color: #163950;
+                line-height: 1.25;
+                list-style-type: none;
+                text-decoration: underline;
+                cursor: pointer;
+                &.activ {
+                    color: rgb(238, 111, 37);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .goods__button {
+        text-align: center;
+        margin: 50px auto;
+        width: 204px;
+        height: 49px;
+        background-color: #27c1de;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        font-family: "Gilroy Medium", sans-serif;
+        line-height: 2.25;  
+        cursor: pointer; 
+        &:hover {
+            background-color: #a3d46b;              
+        }   
+    }
+}
+
+.background {
+    background: url(../img/фон2.jpg) no-repeat;
+    background-position: top center;
+    height: 1068px;
+}
+
+.getting {
+    .getting__title {
+        padding-top: 150px;
+        font-size: 35px;
+        font-family: "Gilroy Bold", sans-serif;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.429;
+        text-align: center;        
+    }
+    .getting-blocks {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        .getting-block {
+            width: 200px;
+            height: 150px;
+            .block-text {
+                margin-top: 25px;
+                font-size: 23px;
+                font-family: "Gilroy SemiBold", sans-serif;
+                color: rgb(255, 255, 255);
+                line-height: 1.087;
+                text-align: center;  
+            }
+            .block-icon__IP {
+                margin: 0 auto;
+                width: 74px;
+                height: 74px;
+                background: url(../img/research.png) no-repeat;                    
+            }
+            .block-icon__KomP {
+                margin: 0 auto;
+                width: 74px;
+                height: 74px;
+                background: url(../img/time-management.png) no-repeat;                    
+            }
+            .block-icon__kacM {
+                margin: 0 auto;
+                width: 74px;
+                height: 74px;
+                background: url(../img/hand.png) no-repeat;                    
+            }
+        }
+    }
+}
+
+.questions {
+    margin-top: 160px;
+    .questions__title {
+        position: relative;
+        padding-bottom: 20px;
+        font-size: 35px;
+        font-family: "Gilroy Bold", sans-serif;
+        color: rgb(22, 57, 80);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.429;
+        text-align: center;
+        &::after {
+            content: "";
+            position:absolute;
+            width: 40px;
+            height: 10px;
+            background: url(../img/подчеркивание.png);
+            left: 48%;
+            bottom: 0;
+        }
+    }
+    .questions__text {
+        width: 460px;
+        margin: 35px auto 0;
+        font-size: 20px;
+        font-family: "Gilroy Medium", sans-serif;
+        color: rgb(22, 57, 80);
+        line-height: 1.25;
+        text-align: center;  
+    }
+    .questions-form {
+        margin-top: 40px;
+        text-align: center;
+        input {
+            padding-left: 25px;
+            margin: 25px auto 0;
+            display: block;
+            border:1px solid rgb(209, 209, 209); 
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.588);
+            box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+            width: 310px;
+            height: 39px;
+            &::placeholder {
+                font-size: 18px;
+                font-family: "Gilroy Medium", sans-serif;
+                color: rgb(22, 57, 80);
+                line-height: 1.389; 
+            }
+        }
+        .button {
+            margin-top: 30px;
+        }
+    }    
+}
+
+.footer {
+    background: url(../img/mapFooter.jpg) no-repeat;
+    background-position: top center;
+    height: 385px;
+    .wrapper-infoBlock {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .footer-infoBlock {
+            position: relative;
+            padding: 50px 35px;
+            width: 425px;
+            height: 300px;
+            background-color: #fff;
+            border-radius: 20px;
+            color: rgb(22, 57, 80);
+            font-size: 18px;            
+            &::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 30px;
+                background-color: #fff;
+                left: -14px;
+                border-left: 20px solid inherit;  
+                border-radius: 100% 0 0 100%;   
+                top: 0;                                   
+             } 
+             &::after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 30px;
+                background-color: #fff;
+                right: -14px;
+                border-right: 20px solid white;  
+                border-radius: 0 100% 100% 0;   
+                top:0;                                   
+             }
+            .footer-infoBlock__title {
+                font-size: 25px;
+                font-family: "Gilroy Bold", sans-serif;
+                line-height: 0.84;
+            }
+            .footer-infoBlock__address {
+                position: relative;
+                margin-top: 50px;
+                padding-left: 40px;
+                font-family: "Gilroy SemiBold", sans-serif;
+                line-height: 1.167;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 25px;
+                    height: 35px;
+                    background: url(../img/map.png) no-repeat;
+                    background-position: center;
+                    left: 0;
+                }
+            }
+            .footer-infoBlock__numbers {
+                position: relative;
+                margin-top: 25px;
+                padding-left: 40px;
+                font-family: "Gilroy Bold", sans-serif;
+                line-height: 1.167;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 25px;
+                    height: 25px;
+                    background: url(../img/telephone.png) no-repeat;
+                    left: 0;
+                }
+            }
+            .footer-infoBlock__email {
+                position: relative;
+                margin-top: 25px;
+                padding-left: 40px;
+                a {
+                    color: rgb(22, 57, 80);
+                    font-family:  "Gilroy Medium", sans-serif;
+                    line-height: 1.167;
+                }
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 25px;
+                    height: 25px;
+                    background: url(../img/@.png) no-repeat;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+

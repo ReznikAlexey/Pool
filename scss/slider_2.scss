@@ -1,0 +1,79 @@
+.goods_swiper-wrapper{
+    position: relative;
+    margin-top: 50px;
+    .goods_swiper {
+        height: 100%;
+        margin: 0 auto; 
+        max-width: 1442px; 
+        .swiper-slide {
+            display: block;
+            padding-top: 14px;
+            font-size: 18px;
+            border: 1px solid rgb(209, 209, 209);
+            border-radius: 6px;
+            background-color: rgb(255, 255, 255);
+            min-height: 351px;
+            .card-pump {
+                margin: 0 auto;
+                width: 231px;
+                height: 225px;
+                background: url(../img/pump.jpg) no-repeat;                    
+            }   
+            .text-pump {
+                padding: 10px 20px 0;
+                font-size: 17px;
+                font-family: "Gilroy Medium", sans-serif;
+                color: rgb(61, 61, 61);
+                line-height: 1.353;
+                text-align: center; 
+            }    
+            .card-spotlight {
+                margin: 0 auto;
+                width: 231px;
+                height: 225px;
+                background: url(../img/spotlight.png) no-repeat;
+                background-position: center;
+            }    
+            .text-spotlight {
+                padding: 10px 20px 0;
+                font-size: 17px;
+                font-family: "Gilroy Medium", sans-serif;
+                color: rgb(61, 61, 61);
+                line-height: 1.353;
+                text-align: center;
+            } 
+        }    
+    }
+    .goods-slider-arrows {
+        position:absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        top: 150px;
+        z-index: 2;
+        .arrw {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 1px solid rgb(175, 175, 175);
+            background: url(../img/left-arrow.png) no-repeat;
+            background-position: center;   
+            background-color: #27c1de; 
+            &:hover {
+                background-color: #3ddafa;  
+            }
+            &.arrwLeft {
+                left: -25px;                                    
+            }
+            &.arrwRight {
+                left: 25px;                    
+                transform: rotate(180deg);       
+            }
+            &:disabled {                   
+                background-color: white;
+            }
+        }
+    }
+}
